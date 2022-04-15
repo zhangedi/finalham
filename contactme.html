@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5L0G4DQ1T9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5L0G4DQ1T9');
+</script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="images/hamsterfavicon.png">
+	<link rel="stylesheet" href="css/html5reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ramaraja">
+	<title>Contact Me</title>
+	<script src="https://kit.fontawesome.com/dbcada88e7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+    <nav>
+        <ul>
+            <li><a href = "index.html" >Home</a></li>
+            <li><a href = "hamstertypes.html">Breeds</a></li>
+            <li><a href = "hamsterhousing.html">Cages</a></li>
+            <li><a href = "hamstercare.html">Care</a></li>
+			<li><a href = "hamsterplay.html">Play</a></li>
+			<li class="active"><a href = "contactme.html">Mail</a></li>
+        </ul>
+    </nav>
+
+	    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+		<div id = "hamburger">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<div class="topnav">
+				<a href="contactme.html" class="active">Mail</a>
+				<div id="myLinks">
+				<a href="index.html">Home</a>
+				<a href="hamstertypes.html">Breeds</a>
+				<a href="hamsterhousing.html">Cages</a>
+				<a href="hamstercare.html">Care</a>
+				<a href="hamsterplay.html">Play</a>
+			  </div>
+			  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			  </a>
+			</div>
+			</div>
+    <a class = 'skip' href="#main"> Skip to Main Content</a>
+    <div class = "intro">
+        <h1>Contact Me</h1>
+        <h2>Love Hamsters too? Send me mail!</h2>
+		<img src=  "images/lofihamandme.png" alt = "A girl holding a grey hamster. Image." width = "200"/>
+
+  </div>
+
+</header>
+	<main id="main">
+	<section id="overlay">
+		<hr>
+		<form action="https://formspree.io/f/mzboanba" method="POST">
+		  <h3>Send me a message!</h3>
+		  <label for="name"><i class="fa-solid fa-user"></i> Name</label>
+		  <input type = "text" name = "text" id = "name"value = "First Name Last Name">
+		  <label for="email"><i class="fa-solid fa-envelope"></i> Email</label>
+		  <input type = "email" name = "email" id = "email"value = "example@example.com">
+		  <label for="phone"><i class="fa-solid fa-phone"></i>Phone</label>
+		  <input type ="tel" name ="phone" id ="phone" value ="XXX-XXX-XXXX">
+		  <label for="hamster">Do you like Hamsters?</label>
+		  <input type="button" name ="hamster" id ="hamster" value="Yes :)">
+		  <input type="button" name ="hamster" id ="hamster" value="No :(">
+		  <label for="message"> Message</label>
+		  <textarea id = "message" name = "message" rows = "5" cols = "30"></textarea>
+		  <form>
+			<input type="submit" value="Send">
+		  </form>
+		</form>
+	  </section>
+	</main>
+	<script>
+		/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+	function myFunction() {
+	  var x = document.getElementById("myLinks");
+	  if (x.style.display === "block") {
+		x.style.display = "none";
+	  } else {
+		x.style.display = "block";
+	  }
+	}
+	</script>
+<footer>Edith Zhang &copy; 2022</footer>
+</body>
+
+  </html>

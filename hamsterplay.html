@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5L0G4DQ1T9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5L0G4DQ1T9');
+</script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="images/hamsterfavicon.png">
+	<link rel="stylesheet" href="css/html5reset.css">
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ramaraja">
+	<title>Hamster Home</title>
+</head>
+
+    <header>
+      <nav>
+        <ul>
+            <li><a href = "index.html" >Home </a></li>
+            <li><a href = "hamstertypes.html">Breeds</a></li>
+            <li><a href = "hamsterhousing.html">Cages</a></li>
+            <li><a href = "hamstercare.html">Care</a></li>
+            <li class="active"><a href = "hamsterplay.html">Play</a></li>
+            <li><a href = "contactme.html">Mail</a></li>
+
+        </ul>
+    </nav>
+    <div id = "hamburger">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <div class="topnav">
+          <a class = "active" href="hamsterplay.html">Play</a>
+            <div id="myLinks">
+            <a href="index.html">Home</a>
+            <a href="hamstertypes.html">Breeds</a>
+            <a href="hamstercare.html">Care</a>
+            <a href="hamsterhousing.html">Cages</a>
+            <a href="contactme.html">Mail</a>
+          </div>
+          <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        </div>
+
+    <a class = 'skip' href="#main"> Skip to Main Content</a>
+
+</header>
+<main id="main">
+
+<h1>Play with me!</h1>
+<h2>Click the buttons to interact with the Hamster!</h2>
+
+<div id= hapbar>
+<div>Sunflowers Eaten</div>
+<div id= bar1></div>
+<div>Headpats Received</div>
+<div id= bar2></div>
+<div>Naps Taken</div>
+<div id= bar3></div>
+
+</div>
+
+<div class = hambutton>
+
+<div class = containerbutton>
+<img id="myImage" alt = "hamster cartoon" src="images/neutral ham javascript.png">
+<button id = "score1" onclick= "changeStyle1(); document.getElementById('myImage').src='images/eatingham.png'" alt = "Hamster cartoon with sunflower seed. Image">Feed Me!</button>
+<button id = "score2" onclick= "changeStyle2(); document.getElementById('myImage').src='images/petting ham javascript.png'" alt = "Hamster cartoon with cartoon heart speech bubble. Image" >Pet Me!</button>
+<button id = "score3" onclick= "changeStyle3(); document.getElementById('myImage').src='images/do not disturb ham javascript.png'" alt = "Hamster cartoon sleeping. Image">Do Not Disturb Me!</button>
+<button id = "score4" onclick= "changeStyle(); document.getElementById('myImage').src='images/neutral ham javascript.png'" alt = "Hamster cartoon sitting down. Image.">Reset</button>
+
+
+</div>
+<script>
+
+  function changeStyle1(){
+    let widthbar = document.getElementById("bar1").offsetWidth;
+    if(widthbar >= 150){
+      console.log(widthbar)
+      score1.innerHTML = "I'm Satisfied!"
+      return;}
+      else{document.getElementById('bar1').style.width = widthbar+10+'px';
+    }}
+
+  function changeStyle2(){
+    var widthbar = document.getElementById("bar2").offsetWidth;
+    if(widthbar >= 150){
+      console.log(widthbar)
+      score2.innerHTML = "I'm Satisfied!"
+      return;}
+      else{document.getElementById('bar2').style.width = widthbar+10+'px';
+    }}
+
+  function changeStyle3(){
+    var widthbar = document.getElementById("bar3").offsetWidth;
+    if(widthbar >= 150){
+      console.log(widthbar)
+      score3.innerHTML = "I'm Satisfied!"
+      return;}
+      else{document.getElementById('bar3').style.width = widthbar+10+'px';
+    }}
+
+  function changeStyle(){
+    var widthbar = document.getElementById("bar1").offsetWidth;
+    var widthbar = document.getElementById("bar2").offsetWidth;
+    var widthbar = document.getElementById("bar3").offsetWidth;
+    document.getElementById('bar1').style.width = 10+'px';
+    document.getElementById('bar2').style.width = 10+'px';
+    document.getElementById('bar3').style.width = 10+'px';
+    score1.innerHTML = "Feed Me!"
+    score2.innerHTML = "Pet Me!"
+    score3.innerHTML = "Do Not Disturb Me!"
+  }
+
+  function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+
+<footer>Edith Zhang &copy; 2022</footer>
+</body>
