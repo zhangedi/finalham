@@ -56,9 +56,21 @@
     <div class = "intro">
         <h1>Contact Me</h1>
         <h2>Love Hamsters too? Send me mail!</h2>
-		<img src=  "images/lofihamandme.png" alt = "A girl holding a grey hamster. Image." width = "200"/>
 
+<div class= "flip">
+<div class = "flip-card">
+	<div class = "flip-card-inner">
+		<div class="flip-card-front">
+			<img src=  "images/lofihamandme.png" alt = "A girl holding a grey hamster. Image." id = flip width = "200"/>
+		</div>
+	<div class = "flip-card-back">
+      <p>Me and my Hamster</p>
+	</div>
+	</div>
+</div>
   </div>
+</div>
+
 
 </header>
 	<main id="main">
@@ -66,11 +78,11 @@
 		<hr>
 		<form action="https://formspree.io/f/mzboanba" method="POST">
 		  <h3>Send me a message!</h3>
-		  <label for="name"><i class="fa-solid fa-user"></i> Name</label>
+		  <label for="name"><i class="fa-solid fa-user" id = formicon></i> Name</label>
 		  <input type = "text" name = "text" id = "name"value = "First Name Last Name">
-		  <label for="email"><i class="fa-solid fa-envelope"></i> Email</label>
-		  <input type = "email" name = "email" id = "email"value = "example@example.com">
-		  <label for="phone"><i class="fa-solid fa-phone"></i>Phone</label>
+		  <label for="email"><i class="fa-solid fa-envelope" id = formicon></i> Email</label>
+		  <input type = "email" name = "email" id = "email" value = "example@example.com">
+		  <label for="phone"><i class="fa-solid fa-phone" id = formicon></i>Phone</label>
 		  <input type ="tel" name ="phone" id ="phone" value ="XXX-XXX-XXXX">
 		  <label for="hamster">Do you like Hamsters?</label>
 		  <input type="button" name ="hamster" id ="hamster" value="Yes :)">

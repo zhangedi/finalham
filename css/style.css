@@ -1,4 +1,6 @@
-
+.contactimg{
+  display: none;
+}
 
 /* Style the navigation menu */
 .topnav {
@@ -67,8 +69,6 @@ nav li{
 a.skip{
   background: white;
   padding: 6px;
-  -webkit-transition: top 1s ease-out;
-  transition: left 1s ease-out;
   z-index: 1;
   position: absolute;
   left: -500px;
@@ -197,6 +197,10 @@ form{
   margin: 0 auto;
 }
 
+#formicon{
+  display: none;
+}
+
 body {
     font-family: 'Trebuchet MS', sans-serif;
   }
@@ -320,6 +324,50 @@ body{
   margin: 10px;
   justify-content:center;
 }
+/* make flip card */
+
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px; 
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner,
+.flip-card:focus-within .flip-card-inner,
+.flip-card:active .flip-card-inner,
+.flip-card:focus .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  color: black;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
   @media (min-width: 768px) and (max-width: 1024px) {
     #hamburger{
       display: none;
@@ -342,7 +390,9 @@ body{
       width: 80%;
       margin: 0 auto;
     }
-
+    #formicon{
+      display: inline-block;
+    }
     input{
       width:80%;
     }
@@ -365,6 +415,12 @@ body{
     gap: 10px;
 
   }
+
+  /* .container{
+    flex-basis: calc(50% - 20px);
+    margin: 10px;
+  } */
+
   nav li:nth-of-type(1)::after{
     content: "🐹";
 }
@@ -427,6 +483,11 @@ content: "📪";
       align-items: center;
       gap: 10px;
     }
+    .container{
+      display: flex;
+      flex-wrap: nowrap;
+      padding: 5px;
+    }
 
     nav{
       display: flex;
@@ -478,7 +539,17 @@ nav li:nth-of-type(3)::after{
     grid-template-columns: 3fr;
     width: 80%;
     margin: 0 auto;
-  }}
+  }
+
+  #formicon{
+    display: inline-block;
+  }
+  *:focus{
+    border: 5px solid red;
+  }
+} 
+
+
 
   @media (prefers-reduced-motion: reduce) {
     #logo{
@@ -489,6 +560,9 @@ nav li:nth-of-type(3)::after{
       width: 200px;
     }
 
+    .flip-card:hover .flip-card-inner {
+      transform: none;
+    }
 
 /* TURN OFF PARALLAX IMAGE */
     .intro{
