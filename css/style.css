@@ -416,7 +416,16 @@ body{
       width: 80%;
       margin: 0 auto;
     }
-    #formicon{
+    #formiconname{
+      display: inline-block;
+    }
+    
+    #formiconemail{
+      display: inline-block;
+    }
+    
+    
+    #formiconphone{
       display: inline-block;
     }
     input{
@@ -495,6 +504,18 @@ content: "📪";
       display: none;
     }
 
+    #formiconname{
+      display: inline-block;
+    }
+    
+    #formiconemail{
+      display: inline-block;
+    }
+    
+    
+    #formiconphone{
+      display: inline-block;
+    }
 
     nav a{
       color: black;
