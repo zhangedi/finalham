@@ -347,7 +347,6 @@ body{
 }
 
 .flip-card:hover .flip-card-inner,
-.flip-card:focus-within .flip-card-inner,
 .flip-card:active .flip-card-inner,
 .flip-card:focus .flip-card-inner {
   transform: rotateY(180deg);
@@ -365,6 +364,14 @@ body{
 }
 
 .flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.flip-card.focus-within .flip-card-inner{
+  transform: rotateY(180deg);
+}
+
+.flip-card-inner:hover .img-responsive, .flip-card-inner:focus .img-responsive {
   transform: rotateY(180deg);
 }
 
@@ -574,3 +581,7 @@ nav li:nth-of-type(3)::after{
       /* background-repeat: no-repeat;
       background-size: cover; */
       }}
+      .flip-card-inner {
+        transition: transform none;
+    }
+
