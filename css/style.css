@@ -205,9 +205,20 @@ form{
   margin: 0 auto;
 }
 
-#formicon{
+#formiconname{
   display: none;
 }
+
+#formiconemail{
+  display: none;
+}
+
+
+#formiconphone{
+  display: none;
+}
+
+
 
 body {
     font-family: 'Trebuchet MS', sans-serif;
